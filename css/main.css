@@ -1,0 +1,462 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+    color:#2d2d2d;
+    font-size: 18px;
+    line-height: 1.4;
+	font-family: 'PT Sans', 'Courier New', 'Arial', sans-serif;
+	-ms-text-size-adjust: 100%; 
+	-webkit-text-size-adjust: 100%; 
+	background-color: #e1e1e1;
+	min-width: 360px;
+    max-width: 1920px;
+	
+
+}
+
+.box{
+	width:100%;
+	max-width: 1360px;
+	background-color: #fff;
+	margin:0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, nav a, .banner{
+	font-family: 'Ubuntu', 'Courier New', 'Arial', sans-serif;
+}
+
+.conteiner, .conteiner_header, footer{
+	width:calc(100% -30px);
+	margin:0 auto;
+	background-color: #fff;
+	padding:30px;
+}
+
+
+
+header{
+	height: 154px;
+	background-color: #fff;
+}
+
+
+.logo{
+	width:20%;
+	float:left;
+}
+
+.logo img{
+	width: 100%;
+    max-width: 220px;
+}
+
+.header_info{
+	width:80%;
+	float: left;
+	text-align: right;
+}
+
+/*
+
+nav ul li{
+	float:left;
+	list-style: none;
+	padding: 0px 3%;
+	padding-left: 5.4%;
+}
+*/
+
+nav{
+	clear: both;
+	margin-left: 60px;
+}
+
+nav ul {
+display: flex;
+justify-content: space-between;
+}
+
+nav ul li {
+display: inline-block;
+text-align: center;
+}
+
+
+nav ul li a{
+	
+	line-height: 60px;
+	text-decoration:none;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover{
+	color:#dd950a;
+}
+
+nav ul li a.active{
+	padding-bottom: 10px;
+	background: url("../images/menu_line.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+    background-size: 100% 4px;
+}
+
+.contacts{
+	height: 40px;
+}
+
+.contacts div{
+	float:right;
+}
+
+.tel p{
+	background: url(../images/phone.png) no-repeat left center;
+    padding: 2px 0px 2px 40px;
+    background-size: contain;
+}
+
+.lang a{
+	text-decoration: none;
+	color:#2d2d2d;
+	text-transform: uppercase;
+}
+
+.social{
+	margin: 0 90px;
+}
+
+.social a{
+    margin: 0 6px;
+    padding: 10px 20px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: 50% 100%;
+}
+
+.vk{
+background-image:url("../images/vk.png");
+background-size: auto 20px;
+}
+.vk:hover{
+background-size: auto 22px;
+-webkit-transform: scale(1.1);
+	ms-transform: scale(1.1);
+ 	transform: scale(1.1);
+}
+
+.fb{
+background-image:url("../images/fb.png");
+background-size: auto 26px;
+}
+
+.fb:hover{
+background-size: auto 28px;
+-webkit-transform: scale(1.1);
+	ms-transform: scale(1.1);
+ 	transform: scale(1.1);
+}
+
+.inst{
+background-image:url("../images/instaa.png");
+background-size: auto 26px;
+}
+
+.inst:hover{
+background-size: auto 28px;
+-webkit-transform: scale(1.1);
+	ms-transform: scale(1.1);
+ 	transform: scale(1.1);
+}
+   /*Блок с центральной фото и дублями пунков меню, переход на страницы 
+   мы и стань одним из нас*/
+.banner{
+	width:100%;
+	height:630px;
+	margin:0 auto;
+	background: url("../images/foto_2.jpg") no-repeat center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	text-transform: uppercase;
+	font-size:48px;
+}
+
+.slogon{
+	width:60%;
+	height: 100%;
+	float:left;
+}
+
+.slogon p{
+	margin-top: 60%;
+    margin-left: 30px;
+    color: #fff;
+}
+
+.menu_double{
+	height: 50%;
+	float:left;
+	margin-left: 60px;
+}
+
+.menu_double p{
+	margin-top: 60%;
+	width:260px;
+}
+
+.menu_double.our p {
+    margin-top: 20%;
+}
+
+.menu_double span{
+	font-size: 40px;
+    margin-left: 20px;
+}
+
+.menu_double:hover{
+	color:#dd950a;
+}
+
+/*Блок главным контентом "Почему"*/
+.main, section{
+	margin-top:90px;
+	overflow: hidden;
+}
+
+article{
+	margin-bottom: 30px;
+	float:left;
+	text-align: justify;
+}
+
+h2{
+	font-size: 36px;
+}
+
+.main h2 span{
+	color:#dd950a;
+	text-transform: uppercase;
+}
+
+.info_liga h2{
+	width:38%;
+	float:left;
+	line-height: 100px;
+	margin-left: 5%;
+}
+
+.info_liga p{
+	display:block;
+	width:57%;
+	float:left;
+}
+
+
+/*Блок главным контентом "Твои возможности"*/
+
+
+section>h2{
+	text-align:center;
+	margin-bottom:80px;
+}
+
+
+section>h2>span{
+	text-transform: uppercase;
+}
+
+.program_gallery{
+	font-family: 'Ubuntu', 'Courier New', 'Arial', sans-serif;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; 
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; 
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; 
+}
+
+.program_gallery img{
+	position: relative;
+	width: 400px;
+}
+
+.program_name{
+	text-align: center;
+    width: 400px;
+    height: 70px;
+    padding-top: 20px;
+    margin-top: -94px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(246, 246, 246, 0.76);
+	transition: all 0.4s ease;
+}
+
+.program:hover .program_name{
+    margin-top: -250px;
+    height: 234px;
+     padding-top: 10px;
+    background-color: rgba(224, 184, 10, 0.57);
+    
+}
+
+.program_name p{
+	font-size: 24px;
+	margin-bottom: 16px;
+	line-height:1.0;
+	transition: all 0.1s ease;
+}
+
+.program:hover .program_name p{
+	font-size: 42px;
+}
+
+.program_name a{
+	width:100px;
+	display: block;
+	margin:0 auto;
+	padding:10px;
+	text-decoration: none;
+	color:#2d2d2d;
+	border:2px solid #2d2d2d;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+.program:hover .program_name a{
+	transform: scale(1);
+}
+
+.program{
+	margin-bottom: 30px;
+}
+
+
+/*Блок "Наши партнеры"*/
+
+.partners-logo-row {
+display: flex;
+justify-content: space-between;
+margin-bottom: 30px; 
+}
+
+.partners-logo-item {
+height: 90px;
+width: ;
+display: flex;
+opacity: 0.9;
+}
+
+.partners-logo-item:hover{
+opacity: 1.0;	
+}
+
+
+.partners-logo-item img {
+margin: auto;
+max-height: 90px;
+min-height: 70px;
+max-width:180px ;
+min-width:80px ;
+}
+
+.maps{
+	background-color: #fff;
+}
+
+footer{
+	height:120px;
+	margin:0 auto;
+	background: url("../images/footer_fon.png") no-repeat center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+.logo{
+	width:20%;
+	float:left;
+}
+
+.logo img{
+	width: 100%;
+    max-width: 220px;
+}
+
+.footer_info{
+	float:left;
+	margin-left:5%;
+}
+
+.footer_info p{
+	margin-bottom: 20px;
+}
+
+footer .social{
+	float:left;
+	margin:0;
+	margin-left: 6%;
+	margin-top:20px;
+}
+
+footer>.social a{
+    margin: 0;
+    padding: 20px 30px;
+}
+
+.vk.footer{
+background-size: auto 30px;
+}
+.vk.footer:hover{
+background-size: auto 32px;
+}
+
+.fb.footer{
+background-size: auto 40px;
+}
+
+.fb.footer:hover{
+background-size: auto 42px;
+}
+
+.inst.footer{
+background-size: auto 40px;
+}
+
+.inst.footer:hover{
+background-size: auto 42px;
+}
+
+#scrollup {
+position: fixed;
+opacity: 0.8;
+right: 10px; 
+bottom: 10px; 
+display: none; 
+cursor: pointer;
+}
+
+
+
+  @media only screen and (max-width:1024px){
+  	
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.footer_info {
+    float: left;
+    margin-left: 2%;
+  }
+
+  footer .social {
+    margin-left: 2%;
+}
