@@ -2,13 +2,13 @@ Code for CSO: Liga
 
 Licence: MIT
 
-#Install dependencies
+### Install dependencies
 `yarn`
 
-#Development
+### Development
 `yarn run dev` - start project dev server
 `yarn run dev-slider` - start slider dev server
 
-#Build
-##Slider
+### Build
+#### Slider
 `yarn build-slider`
