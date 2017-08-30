@@ -1,0 +1,173 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+    color:#2d2d2d;
+    font-size: 18px;
+    line-height: 1.4;
+	font-family: 'PT Sans', 'Courier New', 'Arial', sans-serif;
+	-ms-text-size-adjust: 100%; 
+	-webkit-text-size-adjust: 100%; 
+	background-color: #e1e1e1;
+	min-width: 360px;
+    max-width: 1920px;
+}
+
+.box{
+	width:100%;
+	max-width: 1360px;
+	background-color: #fff;
+	margin:0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, nav a, .banner{
+	font-family: 'Ubuntu', 'Courier New', 'Arial', sans-serif;
+}
+
+.conteiner, .conteiner_header, footer{
+	width:calc(100% -30px);
+	margin:0 auto;
+	background-color: #fff;
+	padding:30px;
+}
+
+/*Блок с шапкой сайта = header
+В нем логотип, меню, телефоны, ссылки на соцсети и переключение языковой панели
+Общий блок для всех страниц сайта*/
+
+header{
+	height: 154px;
+	background-color: #fff;
+}
+
+
+.logo{
+	width:20%;
+	float:left;
+}
+
+.logo img{
+	width: 100%;
+    max-width: 220px;
+}
+
+.header_info{
+	width:80%;
+	float: left;
+	text-align: right;
+}
+
+				 /*Меню, в том числе class .active, привязывается к нужному пункту меню при клике на нем 
+				 и таким образом отоброжает активное состояние кнопки меню в виде нижнего подчеркивания разноцветной линией
+				 Логика поведения обрабатываеться файлом menuActive.js*/
+
+nav{
+	clear: both;
+	margin-left: 60px;
+}
+
+nav ul {
+display: flex;
+justify-content: space-between;
+}
+
+nav ul li {
+display: inline-block;
+text-align: center;
+}
+
+
+nav ul li a{
+	
+	line-height: 60px;
+	text-decoration:none;
+	text-transform: uppercase;
+	color:#2d2d2d;
+}
+
+nav ul li a:hover{
+	color:#dd950a;
+}
+
+.active{
+	padding-bottom: 10px;
+	background: url("../images/menu_line.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+    background-size: 100% 4px;
+    color:#2d2d2d;
+}
+			/*Блок с контактной информацией - телефоны */	
+
+.contacts{
+	height: 40px;
+}
+
+.contacts div{
+	float:right;
+}
+
+.tel p{
+	background: url(../images/phone.png) no-repeat left center;
+    padding: 2px 0px 2px 40px;
+    background-size: contain;
+}
+
+			/*Блок с переключением языковой панели */	
+
+.lang a{
+	text-decoration: none;
+	color:#2d2d2d;
+	text-transform: uppercase;
+}
+
+			/*Блок со ссылками на социальные сети */	
+
+.social{
+	margin: 0 90px;
+}
+
+.social a{
+    margin: 0 6px;
+    padding: 10px 20px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: 50% 100%;
+}
+
+.vk{
+background-image:url("../images/vk.png");
+background-size: auto 20px;
+}
+.vk:hover{
+background-size: auto 22px;
+-webkit-transform: scale(1.1);
+	ms-transform: scale(1.1);
+ 	transform: scale(1.1);
+}
+
+.fb{
+background-image:url("../images/fb.png");
+background-size: auto 26px;
+}
+
+.fb:hover{
+background-size: auto 28px;
+-webkit-transform: scale(1.1);
+	ms-transform: scale(1.1);
+ 	transform: scale(1.1);
+}
+
+.inst{
+background-image:url("../images/instaa.png");
+background-size: auto 26px;
+}
+
+.inst:hover{
+background-size: auto 28px;
+-webkit-transform: scale(1.1);
+	ms-transform: scale(1.1);
+ 	transform: scale(1.1);
+}

@@ -1,0 +1,58 @@
+  
+/*Блок с главным контентом*/
+
+.conteiner{
+	border-top:2px solid #acacac;
+
+}
+
+h1{
+	font-size: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+h2{
+	font-family: 'PT Sans', 'Courier New', 'Arial', sans-serif;
+	font-size: 34px;
+	margin:0 0 20px 0;
+}
+
+h3{
+	margin-top:30px;
+}
+
+
+.info_about{
+	clear:both;
+	width:100%;
+	text-align: justify;
+	text-indent:25px;
+}
+
+.info_about>div{
+	width:48%;
+	float:left;
+	margin:30px 0;
+
+}
+
+.info_about>img{
+	width:50%;
+	float:left;
+}
+
+.info_about.one>div,.info_about.three>div{
+	padding-left:2%;
+}
+.info_about.two>div{
+	padding-right:2%;
+}
+
+.info_about>div>p{
+	margin:10px 0;
+
+}
+
+
