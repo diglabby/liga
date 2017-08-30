@@ -25,4 +25,5 @@ window.onload = function() { // после загрузки страницы
 			scrollUp.style.display = 'none';
 		}
 	};
+	menu();
 };

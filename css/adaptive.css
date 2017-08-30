@@ -1,0 +1,47 @@
+@media only screen and (max-width:1280px){
+
+ 	.program_gallery img {
+    width: 380px;
+	}
+
+	.program_name{
+    width: 380px;
+	}
+
+	.program:hover .program_name{
+    margin-top: -240px;
+    height: 224px;
+	}
+
+	.program:hover .program_name p{
+	font-size: 38px;
+	}
+
+	.footer_info {
+    float: left;
+    margin-left: 5%;
+}
+
+footer .social {
+    margin-left: 4%;
+ }
+
+ h2 {
+    font-size: 32px;
+  }
+
+}
+
+  @media only screen and (max-width:1024px){
+  	
+
+h2 {
+    font-size: 30px;
+}
+
+
+  footer .social {
+    margin-left: 2%;
+}
+
+}

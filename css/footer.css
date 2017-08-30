@@ -1,0 +1,79 @@
+/*Блок с подвалом сайта = footer
+В нем логотип, адрес, телефоны и другая контактная информация, ссылки на соцсети
+Общий блок для всех страниц сайта*/
+
+footer{
+	clear: both;
+	height:120px;
+	margin:0 auto;
+	background: url("../images/footer_fon.png") no-repeat center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+.logo{
+	width:20%;
+	float:left;
+}
+
+.logo img{
+	width: 100%;
+    max-width: 220px;
+}
+
+.footer_info{
+	float:left;
+	margin-left:6%;
+}
+
+.footer_info p{
+	margin-bottom: 20px;
+}
+
+footer .social{
+	float:right;
+	margin:0;
+	margin-left: 6%;
+	margin-top:20px;
+}
+
+footer>.social a{
+    margin: 0;
+    padding: 20px 30px;
+}
+
+.vk.footer{
+background-size: auto 30px;
+}
+.vk.footer:hover{
+background-size: auto 32px;
+}
+
+.fb.footer{
+background-size: auto 40px;
+}
+
+.fb.footer:hover{
+background-size: auto 42px;
+}
+
+.inst.footer{
+background-size: auto 40px;
+}
+
+.inst.footer:hover{
+background-size: auto 42px;
+}
+
+ 				/*Кнопка для поднятия на верх страницы
+				 Логика поведения обрабатываеться файлом scrollup.js*/
+
+#scrollup {
+position: fixed;
+opacity: 0.8;
+right: 10px; 
+bottom: 10px; 
+display: none; 
+cursor: pointer;
+}
