@@ -31,10 +31,11 @@ class Slider {
     this.hideExtraSlides(this.childrens, this.frame);
   }
 
-  hideExtraSlides(slides, frame) {
+  hideExtraSlides(slides, frame, direction) {
     slides.map((slide, index) => {
       if(frame.includes(index)) {
         slide.classList.remove(style.hidden);
+    
         slide.style.order = this.order[index];
       } else {
         slide.classList.add(style.hidden);
@@ -93,7 +94,7 @@ class Slider {
     for(let i = this.startFrame; i < this.startFrame + ELEMENTS_LIMIT; i++)
       this.calculateFramePosition(i);
 
-    this.hideExtraSlides(this.childrens, this.frame);
+    this.hideExtraSlides(this.childrens, this.frame, "left");
   }
 
   slideRight() {
@@ -104,7 +105,7 @@ class Slider {
     for(let i = this.startFrame; i < this.startFrame + ELEMENTS_LIMIT; i++)
       this.calculateFramePosition(i);
 
-    this.hideExtraSlides(this.childrens, this.frame);
+    this.hideExtraSlides(this.childrens, this.frame, "right");
   }
 
 }
