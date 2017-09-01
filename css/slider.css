@@ -1,3 +1,7 @@
-.carusel div:not(:last-child) {
+.carusel div {
   margin-right: 10px;
+}
+
+.carusel {
+  padding-bottom: 30px;
 }
