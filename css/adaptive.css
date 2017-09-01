@@ -9,12 +9,12 @@
 	}
 
 	.program:hover .program_name{
-    margin-top: -240px;
-    height: 224px;
+    margin-top: -238px;
+    height: 222px;
 	}
 
 	.program:hover .program_name p{
-	font-size: 38px;
+	font-size: 36px;
 	}
 
 	.footer_info {

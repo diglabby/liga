@@ -1,7 +1,19 @@
 .carusel div {
-  margin-right: 10px;
+  margin-right: 30px;
+}
+
+.carusel div:last-child{
+  margin-right: 0px;
 }
 
 .carusel {
   padding-bottom: 30px;
+}
+
+.carusel>div>h3{
+	margin-top: 20px;
+}
+
+.app__slider_arrow_wrapper___39DAb{
+	margin-top:-70px;
 }
