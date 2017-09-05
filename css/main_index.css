@@ -19,7 +19,7 @@
 }
 
 .slogon p{
-	margin-top: 65%;
+	margin-top: 496px;
     margin-left: 30px;
     color: #fff;
 }
@@ -165,7 +165,7 @@ section>h2>span{
 
 .program:hover .program_name p{
 	font-size: 36px;
-	padding:0px 15px 15px 15px
+	padding:0px 20px 20px 20px
 }
 
 .program_name a{

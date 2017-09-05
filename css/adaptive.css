@@ -30,6 +30,21 @@ footer .social {
     font-size: 32px;
   }
 
+.info_about.one > div{
+  margin:30px 0;
+}
+
+
+
+
+.info_about h2{
+  font-size: 34px;
+  margin:0 0 20px 0;
+  line-height: 0.95;
+}
+
+
+
 }
 
   @media only screen and (max-width:1024px){
