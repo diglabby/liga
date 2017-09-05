@@ -55,3 +55,81 @@ article ul{
 	margin:10px 0;
 
 }
+
+.block_vznos{
+	overflow: hidden;
+	clear:both;
+	width:1130px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.block_vznos h2 {
+	font-family: 'PT Sans', 'Courier New', 'Arial', sans-serif;
+	font-size: 36px;
+}
+
+.block_vznos>h2{
+	margin:60px 0 40px 0;
+} 
+
+.vznos{
+	float:left;
+	width:180px;
+}
+
+.vznos.math_operator{
+	font-family: 'Ubuntu', 'Courier New', 'Arial', sans-serif;
+    font-size: 60px;
+    width: 10px;
+    padding: 10px 20px;
+}
+
+
+.math_operator.one{
+	padding: 10px 30px;
+}
+
+.vznos img{
+	height:90px;
+} 
+
+.vznos_symma{
+	font-family: 'Ubuntu', 'Courier New', 'Arial', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.vznos_line, .vznos_symma.line{
+	border-bottom: 3px solid #dd950a;
+    width: 130px;
+    margin: auto;
+}
+
+.vznos_comment{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+
+.vznos.one img{
+	
+}
+
+.vznos.two img{
+
+}
+
+.vznos.three img{
+
+}
+
+.vznos.four img{
+
+}
+
+.vznos.five img{
+
+}
