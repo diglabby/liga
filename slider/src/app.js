@@ -1,4 +1,5 @@
 import style from "./app.css";
+import animation from "./animate.css";
 
 const ELEMENTS_LIMIT = 3; // Frames on screen
 const STEP = 1; // How much frame change per click
@@ -52,11 +53,14 @@ class Slider {
       if (frame.includes(index)) {
         // if slide in range - removing hidden class (even if there isn't hidden class - whatewher?)
         slide.classList.remove(style.hidden);
+        slide.classList.remove(...[animation.fadeOut]);
+
         // adding corresponded order -1, 0, 1 for positioning in right place
         slide.style.order = this.order[index];
       } else {
         // order doesn't metter here, just add hiding class
         slide.classList.add(style.hidden);
+        slide.classList.add(...[animation.animated, animation.fadeOut]);
       }
     });
   }
@@ -72,7 +76,9 @@ class Slider {
     rightArrow.className += ` ${style.slider_arrow} ${style.slider_right_arrow}`;
     rightArrowWrapper.style.order = 2;
     rightArrowWrapper.appendChild(rightArrow);
-    rightArrowWrapper.addEventListener("click", this.slideRight.bind(this));
+    rightArrowWrapper.addEventListener("click", () =>
+      this.animateAllSlides(this.childrens, this.slideRight.bind(this))
+    );
 
     return rightArrowWrapper;
   }
@@ -88,7 +94,9 @@ class Slider {
     leftArrow.className += ` ${style.slider_arrow} ${style.slider_left_arrow}`;
     leftArrowWrapper.style.order = -2;
     leftArrowWrapper.appendChild(leftArrow);
-    leftArrowWrapper.addEventListener("click", this.slideLeft.bind(this));
+    leftArrowWrapper.addEventListener("click", () =>
+      this.animateAllSlides(this.childrens, this.slideLeft.bind(this))
+    );
 
     return leftArrowWrapper;
   }
@@ -121,13 +129,33 @@ class Slider {
     }
   }
 
+  animateAllSlides(slides, action, options) {
+    action(slides, options);
+  }
+
   /*
    * It's sort of sliding window realisation
    */
+  animateSlideRight(slides) {
+    return new Promise(resolve =>
+      setTimeout(function() {
+        slides.map((slide, index) => {
+          slide.classList.remove(
+            ...[animation.animated, animation.slideOutRight]
+          );
+          resolve(true);
+        });
+      }, 600)
+    );
+  }
   /*
    * Left arrow function, keeping bounds, changing order
    */
-  slideLeft() {
+  async slideLeft(slides) {
+    slides.map((slide, index) =>
+      slide.classList.add(...[animation.animated, animation.slideOutRight])
+    );
+
     this.frame = [];
     // We don't wont overflow here, it's not easy reacheble, but still
     // If We complete full round, just reseting to -1
@@ -140,13 +168,31 @@ class Slider {
       this.calculateFramePosition(i);
 
     // All others slides we want to hide
+    await this.animateSlideRight(this.childrens);
     this.hideExtraSlides(this.childrens, this.frame, "left");
+  }
+
+  animateSlideLeft(slides) {
+    return new Promise(resolve =>
+      setTimeout(function() {
+        slides.map((slide, index) => {
+          slide.classList.remove(
+            ...[animation.animated, animation.slideOutLeft]
+          );
+          resolve(true);
+        });
+      }, 600)
+    );
   }
 
   /*
    * Right arrow function, keeping bounds, changing order
    */
-  slideRight() {
+  async slideRight(slides) {
+    slides.map((slide, index) =>
+      slide.classList.add(...[animation.animated, animation.slideOutLeft])
+    );
+
     this.frame = [];
     // We don't wont overflow here, it's not easy reacheble, but still
     // If We complete full round, just reseting to 1
@@ -159,6 +205,7 @@ class Slider {
       this.calculateFramePosition(i);
 
     // All others slides we want to hide
+    await this.animateSlideLeft(this.childrens);
     this.hideExtraSlides(this.childrens, this.frame, "right");
   }
 }
