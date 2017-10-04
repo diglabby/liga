@@ -23,7 +23,7 @@ h1{
 }
 
 .info_about .hTwo{
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 article ul{
@@ -39,11 +39,19 @@ article ul{
 .info_about>div{
 	width:46%;
 	float:left;
+}
+
+.info_about.one>div{
+	margin: 45px 0;
+}
+
+
+.info_about.two>div{
 	margin: 50px 0;
 }
 
 .info_about.three>div {
-    margin: 40px 0;
+    margin: 35px 0;
 }
 
 .info_about>img{
@@ -51,12 +59,14 @@ article ul{
 	float:left;
 }
 
-
 .info_about.one,.info_about.three{
 	overflow: hidden;
-	background-color: #f1fdf9;
+	background-color: #e6fdd6;
 }
 
+.block_ytastnik.two{
+	clear:both;
+}
 
 .info_about>div{
 	padding:0 2%;
