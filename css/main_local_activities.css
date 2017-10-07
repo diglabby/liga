@@ -1,0 +1,142 @@
+  
+/*Блок с главным контентом*/
+
+.conteiner{
+	padding: 0px;
+
+}
+
+h1{
+	font-size: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 30px 0;
+	border-top:2px solid #acacac;
+	font-weight: 400;
+}
+
+.info_about h2{
+	font-family: 'PT Sans', 'Courier New', 'Arial', sans-serif;
+	font-size: 36px;
+	margin: 0 0 30px 0;
+	line-height: 0.95;
+}
+
+.info_about .hTwo{
+	margin-top: 30px;
+}
+
+.info_about{
+	clear:both;
+	width:100%;
+	text-align: justify;
+}
+
+.info_about>div{
+	width:46%;
+	float:left;
+}
+
+.info_about.one>div{
+	margin: 40px 0;
+}
+
+
+.info_about.two>div{
+	margin: 30px 0;
+}
+
+
+.info_about>img{
+	width:50%;
+	float:left;
+}
+
+.info_about.one{
+	overflow: hidden;
+	background-color: #feffc3;
+}
+
+.block_ytastnik.two{
+	clear:both;
+}
+
+.info_about>div{
+	padding:0 2%;
+}
+
+
+.info_about>div>p{
+	margin:7px 0;
+
+}
+
+.block_ytastnikam{
+	clear:both;
+	overflow: hidden;
+	text-align: center;
+}
+
+.block_ytastnikam h2 {
+	font-family: 'PT Sans', 'Courier New', 'Arial', sans-serif;
+	font-size: 36px;
+	margin:60px 0 40px 0;
+}
+
+
+.block_ytastnik>div{
+	float:left;
+	width:22%;
+	text-align: center;
+}
+
+.block_ytastnik.one>div{
+	margin:0 11% 0 0;
+}
+
+.block_ytastnik.two>div{
+	margin:0 0 0 11%;
+}
+
+.block_ytastnik p{
+	padding:20px 0;
+}
+
+.arrong.left{
+	float:left;
+	margin:0 0 -30px 20px;
+}
+
+.arrong.right{
+	float:right;
+	margin:0 20px -30px 0;
+}
+
+.block_ytastnik.two img{
+	display: block;
+    margin: 0 auto;
+    clear: both;
+}
+
+.kontact_komanda{
+	margin:100px 30px 60px 30px;
+}
+
+
+@media only screen and (max-width: 1280px){
+
+	body{
+		line-height: 1.2;
+	}
+	
+
+	.info_about.one>div {
+	    margin: 45px 0;
+	}
+
+	.info_about.two>div {
+   		margin: 45px 0;
+	}
+
+	
+}
