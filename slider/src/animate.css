@@ -1592,7 +1592,7 @@
 
   to {
     visibility: hidden;
-    transform: translate3d(-115%, 0, 0);
+    transform: translate3d(-120%, 0, 0);
   }
 }
 
@@ -1607,7 +1607,7 @@
 
   to {
     visibility: hidden;
-    transform: translate3d(115%, 0, 0);
+    transform: translate3d(120%, 0, 0);
   }
 }
 
