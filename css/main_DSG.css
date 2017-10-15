@@ -26,6 +26,10 @@ h1{
 	margin-top: 20px;
 }
 
+.info_about .Hthree{
+	margin-bottom:20px;
+}
+
 article ul{
 	margin-left: 20px;
 }
@@ -42,7 +46,7 @@ article ul{
 }
 
 .info_about.one>div{
-	margin: 40px 0;
+	margin: 35px 0;
 }
 
 
@@ -135,10 +139,9 @@ article ul{
 	body{
 		line-height: 1.2;
 	}
-	
 
 	.info_about.one>div {
-	    margin: 20px 0;
+	    margin: 35px 0;
 	}
 
 	.info_about.two>div {
@@ -148,6 +151,5 @@ article ul{
 	.info_about.three>div {
    		margin: 8px 0;
 	}
-
 
 }

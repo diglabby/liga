@@ -42,12 +42,11 @@ article ul{
 }
 
 .info_about.one>div{
-	margin: 40px 0;
+	margin: 35px 0;
 }
 
-
 .info_about.two>div{
-	margin: 80px 0;
+	margin: 75px 0;
 }
 
 .info_about.three>div {
@@ -58,11 +57,7 @@ article ul{
 	width:50%;
 	float:left;
 }
-/*
-.info_about.one>div,.info_about.three>div{
-	padding-left:2%;
-}
-*/
+
 
 .info_about.one,.info_about.three{
 	overflow: hidden;
@@ -141,21 +136,18 @@ article ul{
 	body{
 		line-height: 1.2;
 	}
-	
-.info_about.two>div {
+
+	.info_about.one>div {
+	    margin: 35px 0;
+	}
+
+	.info_about.two>div {
    		margin: 80px 0;
 	}
 
-/*
-	.info_about.one>div {
-	    margin: 20px 0;
+	.info_about.three>div {
+   		margin: 25px 0;
 	}
 
-	
-
-	.info_about.three>div {
-   		margin: 8px 0;
-	}*/
-
-
 }
+

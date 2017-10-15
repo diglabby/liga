@@ -37,8 +37,7 @@ h3{
 .info_about>div{
 	width:48%;
 	float:left;
-	margin: 55px 0;
-
+	margin: 35px 0;
 }
 
 .info_about>img{
@@ -58,3 +57,23 @@ h3{
 
 }
 
+
+@media only screen and (max-width: 1280px){
+
+	body{
+		line-height: 1.2;
+	}
+
+	.info_about.one>div {
+	    margin: 25px 0;
+	}
+
+	.info_about.two>div {
+   		margin: 50px 0;
+	}
+
+	.info_about.three>div {
+   		margin: 40px 0;
+	}
+
+}

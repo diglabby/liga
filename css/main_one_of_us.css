@@ -36,7 +36,18 @@ article ul{
 .info_about>div{
 	width:48%;
 	float:left;
-	margin: 55px 0;
+}
+
+.info_about.one>div{
+	margin: 20px 0;
+}
+
+.info_about.two>div{
+	margin: 50px 0;
+}
+
+.info_about.three>div {
+    margin: 50px 0;
 }
 
 .info_about>img{
@@ -111,4 +122,25 @@ article ul{
 .vznos_comment{
 	font-weight: bold;
 	font-size: 15px;
+}
+
+
+@media only screen and (max-width: 1280px){
+
+	body{
+		line-height: 1.2;
+	}
+
+	.info_about.one>div {
+	    margin: 30px 0;
+	}
+
+	.info_about.two>div {
+   		margin: 50px 0;
+	}
+
+	.info_about.three>div {
+   		margin: 50px 0;
+	}
+
 }
