@@ -36,14 +36,27 @@ article ul{
 	text-align: justify;
 }
 
+.info_about .Hthree{
+	margin-bottom:10px;
+}
+
 .info_about>div{
 	width:46%;
 	float:left;
+}
+
+.info_about.one>div{
+	margin: 30px 0;
+}
+
+
+.info_about.two>div{
 	margin: 40px 0;
 }
 
+
 .info_about.three>div {
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 .info_about>img{
@@ -127,7 +140,7 @@ article ul{
 	}
 
 	.info_about.one>div {
-	    margin: 34px 0;
+	    margin: 35px 0;
 	}
 
 	.info_about.three>div {

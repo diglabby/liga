@@ -55,7 +55,7 @@ article ul{
 }
 
 .info_about.three>div {
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 .info_about.three>div>p {
@@ -150,12 +150,30 @@ article ul{
 	}
 
 	.info_about.two>div {
-   		margin: 45px 0;
+   		margin: 40px 0;
 	}
 
 	.info_about.three>div {
-   		margin: 20px 0;
+   		margin: 25px 0;
 	}
+}
+
+@media only screen and (max-width: 1200px){
+
+}
+
+	/* === Планшеты === */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+}
+
+	/* === Смартфоны === */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+}
+ 
 
 
 }

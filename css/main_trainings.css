@@ -23,7 +23,8 @@ h1{
 }
 
 .info_about .hTwo{
-	margin-top: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .info_about .Hthree{
@@ -51,11 +52,11 @@ article ul{
 
 
 .info_about.two>div{
-	margin: 30px 0;
+	margin: 18px 0;
 }
 
 .info_about.three>div {
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 .info_about.three>div>p {
@@ -143,19 +144,22 @@ article ul{
 	body{
 		line-height: 1.2;
 	}
-	
 
 	.info_about.one>div {
 	    margin: 45px 0;
 	}
 
 	.info_about.two>div {
-   		margin: 45px 0;
+   		margin: 25px 0;
 	}
 
 	.info_about.three>div {
-   		margin: 20px 0;
+   		margin: 10px 0;
 	}
 
+	.info_about .hTwo{
+	margin-top: 20px;
+	}
 
 }
+
