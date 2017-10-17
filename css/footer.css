@@ -1,3 +1,4 @@
+@import url("svg_font/css/Glyphter.css");
 /*Блок с подвалом сайта = footer
 В нем логотип, адрес, телефоны и другая контактная информация, ссылки на соцсети
 Общий блок для всех страниц сайта*/
@@ -70,10 +71,30 @@ background-size: auto 42px;
 				 Логика поведения обрабатываеться файлом scrollup.js*/
 
 #scrollup {
-position: fixed;
-opacity: 0.8;
-right: 10px; 
-bottom: 10px; 
-display: none; 
-cursor: pointer;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	cursor: pointer;
+	background-color: WhiteSmoke;
+	border: 2px solid darkgray;
+	padding: 0.3em;
+	color: darkgray;
+	opacity: 0.3;
+	display: none;
+
+	transition: 400ms;
+	transition-timing-function: ease-in-out;
+	-webkit-transition: 400ms;
+	-webkit-transition-timing-function: ease-in-out;
+}
+
+.up-arrow {
+	font-size: 2em;
+	display: flex;
+}
+
+#scrollup:hover {
+	color: #dd950a;
+	border: 2px solid #dd950a;
+	opacity: 0.8;
 }
