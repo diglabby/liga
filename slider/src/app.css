@@ -16,13 +16,17 @@
   visibility: visible;
   opacity: 1;
 
-  transition: visibility 0s, opacity 1.5s, transform 0.9s ease;
+  transition: opacity 0.7s ease;
+}
+
+.transparent {
+  opacity: 0;
 }
 
 .hidden {
   opacity: 0;
-  visibility: hidden;
   position: absolute;
+  top: -999999px;
 }
 
 .hiddenRight {
@@ -32,7 +36,9 @@
 .hiddenLeft {
   transform: translateX(-600px);
 }
-
+/*
+* Creating cool pure CSS3 transfomation based arrows with smooth hover effect
+*/
 .slider_arrow {
   height: 4px;
   width: 40px;
@@ -40,7 +46,7 @@
   top: -15px;
   position: absolute;
   background: darkgray;
-  transition:0.5s ease;
+  transition: 0.5s ease;
   transform: rotate(45deg);
 }
 
@@ -55,7 +61,7 @@
   width: 40px;
   background: darkgray;
   transition: 0.5s ease;
-  transform: translate(19px,19px) rotate(90deg);
+  transform: translate(19px, 19px) rotate(90deg);
 }
 
 .slider_left_arrow::after {
@@ -64,7 +70,7 @@
   height: 4px;
   width: 40px;
   background: darkgray;
-  transition:0.5s ease;
+  transition: 0.5s ease;
   transform: translate(19px, -19px) rotate(90deg);
 }
 
@@ -75,18 +81,18 @@
   top: 160px;
 }
 
-.slider_arrow_wrapper:hover .slider_right_arrow{
+.slider_arrow_wrapper:hover .slider_right_arrow {
   transform: rotate(45deg) scale(1.2);
   background: orange;
 }
-.slider_arrow_wrapper:hover .slider_right_arrow::after{
+.slider_arrow_wrapper:hover .slider_right_arrow::after {
   background: orange;
 }
 
-.slider_arrow_wrapper:hover .slider_left_arrow{
+.slider_arrow_wrapper:hover .slider_left_arrow {
   transform: rotate(135deg) scale(1.2);
   background: orange;
 }
-.slider_arrow_wrapper:hover .slider_left_arrow::after{
+.slider_arrow_wrapper:hover .slider_left_arrow::after {
   background: orange;
 }

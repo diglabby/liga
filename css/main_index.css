@@ -1,4 +1,8 @@
-   /*Блок с центральной фото и дублями пунков меню, переход на страницы 
+/* Футер */
+.lang .active-lang{
+	color:#dd950a;
+}
+	 /*Блок с центральной фото и дублями пунков меню, переход на страницы
    мы и стань одним из нас*/
 .banner{
 	width:100%;
@@ -33,7 +37,7 @@
 .menu_double a{
 	text-decoration: none;
 	color:#2d2d2d;
-} 
+}
 
 .menu_double p{
 	margin-top: 60%;
@@ -123,13 +127,13 @@ section>h2>span{
 	font-family: 'Ubuntu', 'Courier New', 'Arial', sans-serif;
 	display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; 
+    display: flex;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between; 
+    justify-content: space-between;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .program_gallery img{
@@ -154,7 +158,7 @@ section>h2>span{
     height: 234px;
      padding-top: 10px;
     background-color: rgba(224, 184, 10, 0.57);
-    
+
 }
 
 .program_name p{
@@ -193,14 +197,14 @@ section>h2>span{
 .partners-logo-row {
 	display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; 
+    display: flex;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between; 
+    justify-content: space-between;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; 
-	margin-bottom: 30px; 
+    flex-wrap: wrap;
+	margin-bottom: 30px;
 }
 
 .partners-logo-item {
@@ -211,7 +215,7 @@ section>h2>span{
 }
 
 .partners-logo-item:hover{
-	opacity: 1.0;	
+	opacity: 1.0;
 }
 
 
