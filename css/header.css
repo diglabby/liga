@@ -133,8 +133,7 @@ nav ul li a:hover{
     margin: 0 6px;
     padding: 10px 20px;
     background-repeat: no-repeat;
-    background-origin: content-box;
-    background-position: 50% 100%;
+    background-position: 50% 50%;
 }
 
 .vk{
