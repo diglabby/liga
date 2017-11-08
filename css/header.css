@@ -69,7 +69,11 @@ nav{
 }
 
 nav ul {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
 justify-content: space-between;
 }
 
@@ -109,11 +113,17 @@ nav ul li a:hover{
 	float:right;
 }
 
+
 .tel p{
 	background: url(../images/phone.png) no-repeat left center;
     padding: 0px 0px 0px 40px;
-    background-size: contain;
+	background-size: contain;
 }
+
+.tel p:last-child {
+	background: none;
+}
+
 
 			/*Блок с переключением языковой панели */	
 
