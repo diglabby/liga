@@ -52,9 +52,14 @@ footer{
 	margin-bottom: 10px;
 }
 
+.footer-bottom__left a {
+	color: #1a1a1a;
+}
+
 .footer-bottom__right p {
 	margin-bottom: 10px;
 }
+
 
 .footer-bottom__right p:last-child {
 	margin-bottom: 0;
