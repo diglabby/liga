@@ -88,3 +88,24 @@ h3{
 		line-height: 1.1;
 	}
 }
+
+@media only screen and (max-width: 360px) {
+	.local_title {
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 60.96px;
+	}
+
+	.info_about.one {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.info_about>img {
+		width: 100%;
+	}
+
+	.info_about .local_h2 {
+		font-size: 20px;
+	}
+}

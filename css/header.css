@@ -22,6 +22,12 @@ body{
 	margin:0 auto;
 }
 
+@media only screen and (max-width: 360px) {
+	.box {
+		max-width: 360px;
+	}
+}
+
 h1, h2, h3, h4, h5, h6, nav a, .banner{
 	font-family: 'Ubuntu', 'Courier New', 'Arial', sans-serif;
 }
@@ -33,6 +39,17 @@ h1, h2, h3, h4, h5, h6, nav a, .banner{
 	padding:30px;
 }
 
+@media only screen and (max-width: 360px) {
+	.conteiner_header {
+		width: 100%;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
 /*Блок с шапкой сайта = header
 В нем логотип, меню, телефоны, ссылки на соцсети и переключение языковой панели
 Общий блок для всех страниц сайта*/
@@ -40,6 +57,13 @@ h1, h2, h3, h4, h5, h6, nav a, .banner{
 header{
 	height: 154px;
 	background-color: #fff;
+}
+
+@media only screen and (max-width: 360px) {
+	header {
+		width: 100%;
+		min-height: 480px;
+	}
 }
 
 
@@ -59,6 +83,15 @@ header{
 	text-align: right;
 }
 
+@media only screen and (max-width: 360px) {
+	.header_info {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
 				 /*Меню, в том числе class .active, привязывается к нужному пункту меню при клике на нем 
 				 и таким образом отоброжает активное состояние кнопки меню в виде нижнего подчеркивания разноцветной линией
 				 Логика поведения обрабатываеться файлом menuActive.js*/
@@ -66,6 +99,15 @@ header{
 nav{
 	clear: both;
 	margin-left: 60px;
+}
+
+@media only screen and (max-width: 360px) {
+	nav ul {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+	}
 }
 
 nav ul {
@@ -109,6 +151,17 @@ nav ul li a:hover{
 	height: 40px;
 }
 
+@media only screen and (max-width: 360px) {
+	.contacts {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		min-height: 140px;
+		align-items: center;
+		justify-content: flex-start;
+	}
+}
+
 .contacts div{
 	float:right;
 }
@@ -137,6 +190,14 @@ nav ul li a:hover{
 
 .social{
 	margin: 0 90px;
+}
+
+@media only screen and (max-width: 360px) {
+	.social {
+		display: flex;
+		min-height: 60px;
+		margin: 0;
+	}
 }
 
 .social a{
