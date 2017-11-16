@@ -241,3 +241,10 @@ background-size: auto 28px;
 	ms-transform: scale(1.1);
  	transform: scale(1.1);
 }
+
+
+@media only screen and (max-width: 360px) {
+	#menu {
+		margin: 0;
+	}
+}
