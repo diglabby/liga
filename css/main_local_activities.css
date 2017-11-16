@@ -15,6 +15,8 @@ h1{
 	font-weight: 400;
 }
 
+
+
 .info_about h2{
 	font-family: 'PT Sans', 'Courier New', 'Arial', sans-serif;
 	font-size: 36px;
@@ -142,15 +144,21 @@ h1{
 }
 
 @media only screen and (max-width: 360px) {
+
+	h1 {
+		border-top: none;
+	}
+
 	.conteiner {
 		width: 100%;
 	}
 
-
 	.local_title {
 		font-size: 24px;
 		font-weight: bold;
-		line-height: 60.96px;
+		line-height: 1;
+		padding: 0;
+		margin-bottom: 30px;
 	}
 
 	.info_about.one {
@@ -159,18 +167,21 @@ h1{
 		background-color: #fff;
 	}
 
+	.info_about>div {
+		padding: 0;
+	}
+
 	.info_about>img {
 		width: 100%;
 		order: 2;
+		margin-bottom: 38px;
 	}
 
 	.info_about.one>div {
-		width: 100%;
-		padding: 0;
-		padding-left: 15px;
-		padding-right: 15px;
+		width: 90%;
 		order: 1;
-		margin-top: 0;
+		margin: 0;
+		padding-left: 12px;
 		margin-bottom: 35px;
 	}
 
@@ -183,6 +194,7 @@ h1{
 
 	.info_about .local_h2 {
 		font-size: 20px;
+		line-height: 1;
 	}
 
 	.info_about.two h2 {
@@ -194,14 +206,36 @@ h1{
 	.info_about.two>div {
 		margin: 0;
 		width: 100%;
+		padding-left: 12px;
+		margin-bottom: 35px;
 	}
 
 	.info_about.two>div>p {
 		margin: 0;
+		width: 90%;
 	}
 
 	.info_about.two>img {
 		display: none;
+	}
+
+	.block_ytastnik.one>div {
+		margin-bottom: 35px;
+	}
+
+	.block_ytastnik.two>div {
+		margin-bottom: 35px;
+	}
+
+	.block_ytastnik.three>div {
+		margin-bottom: 35px;
+	}
+
+	.block_ytastnikam h2 {
+		font-size: 20px;
+		line-height: 24px;
+		margin: 0;
+		margin-bottom: 35px;
 	}
 
 	.block_ytastnik p {
@@ -222,15 +256,39 @@ h1{
 		display: flex;
 		flex-direction: column;
 	}
-	.block_ytastnik.two>div {
-		width: 100%;
+
+	.one {
+		order: 1;
 	}
+
+	.two {
+		order: 3;
+	}
+
+	.three {
+		order: 5;
+	}
+
+	.four {
+		order: 2;
+	}
+
+	.five {
+		order: 4;
+	}
+
+	.six {
+		order: 6;
+	}
+
 	.arrong {
 		display: none;
 	}
 
 	.block_ytastnik.two>div {
 		margin: 0;
+		width: 100%;
+		margin-bottom: 35px;
 	}
 	.kontact_komanda {
 		margin: 0;
@@ -266,7 +324,6 @@ h1{
 	footer .footer_info-1 {
 		width: 170px;
 		margin-left: 0;
-		outline: 1px solid black;
 	}
 
 	footer .footer_info-2,
@@ -277,5 +334,26 @@ h1{
 
 	.footer-wrapper .logo {
 		display: none;
+	}
+
+	.footer-bottom {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.footer-bottom .footer-bottom__left {
+		margin-right: 0;
+	}
+
+	.footer-bottom .footer-bottom__left p:first-child {
+		margin-bottom: 0;
+	}
+
+	.footer-bottom .footer-bottom__right p {
+		margin-bottom: 0;
+	}
+
+	.footer-bottom-2 {
+		flex-direction: column;
 	}
 }
