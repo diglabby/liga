@@ -282,3 +282,49 @@ background-size: auto 28px;
 header .js-toggle {
 	display: flex;
 }
+
+
+@media only screen and (max-width: 860px) {
+	.conteiner_header {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		padding-top: 15px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.logo {
+		margin-bottom: 15px;
+	}
+
+	.contacts {
+		min-height: 40px;
+		display: flex;
+		align-items: center;
+	}
+
+	#menu {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	.contacts {
+		flex-direction: column;
+	}
+
+	.contacts div {
+		float: none;
+	}
+
+	.social {
+		margin: 0;
+		margin-bottom: 15px;
+	}
+
+	nav ul {
+		flex-direction: column;
+		margin-top: 30px;
+	}
+}

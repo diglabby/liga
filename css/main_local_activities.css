@@ -139,9 +139,206 @@ h1{
 	.info_about.two>div {
    		margin: 45px 0;
 	}
-
-	
 }
+
+@media only screen and (max-width: 1023px) {
+	.info_about.one {
+		min-height: 260px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.info_about.one>img {
+		height: 100%;
+	}
+
+
+	.info_about.one>div {
+		margin: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.info_about.two {
+		height: 300px;
+	}
+
+	.info_about.two>div {
+		margin: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.info_about.two>img {
+		height: 100%;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	h1 {
+		border-top: none;
+	}
+
+	.conteiner {
+		width: 100%;
+	}
+
+	.local_title {
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 1;
+		padding: 0;
+		margin-bottom: 30px;
+	}
+
+	.info_about.one {
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+	}
+
+	.info_about>div {
+		padding: 0;
+	}
+
+	.info_about>img {
+		width: 100%;
+		order: 2;
+		margin-bottom: 38px;
+	}
+
+	.info_about.one>div {
+		width: 90%;
+		order: 1;
+		margin: 0;
+		padding-left: 12px;
+		margin-bottom: 35px;
+	}
+
+	.info_about.one>div>p {
+		width: 100%;
+		font-size: 18px;
+		line-height: 22px;
+		color: #181818;
+	}
+
+	.info_about .local_h2 {
+		font-size: 20px;
+		line-height: 1;
+		width: 96%;
+	}
+
+	.info_about.two h2 {
+		width: 96%;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: bold;
+	}
+
+	.info_about.two>div {
+		margin: 0;
+		width: 95%;
+		padding-left: 12px;
+		margin-bottom: 35px;
+	}
+
+	.info_about.two>div>p {
+		margin: 0;
+		width: 90%;
+	}
+
+	.info_about.two>img {
+		display: none;
+	}
+
+	.block_ytastnik.one>div {
+		margin-bottom: 35px;
+	}
+
+	.block_ytastnik.two>div {
+		margin-bottom: 35px;
+	}
+
+	.block_ytastnik.three>div {
+		margin-bottom: 35px;
+	}
+
+	.block_ytastnikam h2 {
+		font-size: 20px;
+		line-height: 24px;
+		margin: 0;
+		margin-bottom: 35px;
+	}
+
+	.block_ytastnik p {
+		font-size: 18px;
+		line-height: 20px;
+		color: #0f0f0f;
+	}
+
+	.block_ytastnik.one {
+		display: flex;
+		flex-direction: column;
+	}
+	.block_ytastnik.one>div {
+		width: 100%;
+	}
+
+	.block_ytastnik.two {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.one {
+		order: 1;
+	}
+
+	.two {
+		order: 3;
+	}
+
+	.three {
+		order: 5;
+	}
+
+	.four {
+		order: 2;
+	}
+
+	.five {
+		order: 4;
+	}
+
+	.six {
+		order: 6;
+	}
+
+	.arrong {
+		display: none;
+	}
+
+	.block_ytastnik.two>div {
+		margin: 0;
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	.kontact_komanda {
+		margin: 0;
+		margin-top: 35px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 220px;
+		line-height: 22px;
+		margin-bottom: 35px;
+	}
+
+	.kontact_komanda a {
+		display: inline-block;
+		width: 200px;
+	}
+}
+
 
 @media only screen and (max-width: 360px) {
 

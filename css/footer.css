@@ -113,6 +113,10 @@
 		padding-right: 10px;
 	}
 
+	.footer-top__logo {
+		margin-right: 10px;
+	}
+
 	.footer-top__social {
 		display: flex;
 		flex-direction: column;
@@ -144,7 +148,7 @@
 	.footer-top__2,
 	.footer-top__3,
 	.footer-top__4 {
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 22px;
 	}
 
