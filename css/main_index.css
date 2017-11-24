@@ -237,3 +237,72 @@ section>h2>span{
 .maps{
 	background-color: #fff;
 }
+
+@media screen and (max-width: 1024px) {
+	.box {
+		width: 100%;
+	}
+
+	.banner {
+		width: 95%;
+		min-height: 300px;
+		display: flex;
+		flex-direction: column;
+		padding-left: 15px;
+		padding-right: 15px;
+		background-image: url("../images/foto_1.jpg");
+	}
+
+	.slogon {
+		width: 100%;
+		height: 100px;
+		padding-top: 35px;
+	}
+
+	.slogon p {
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	.menu_double {
+		width: 100%;
+		height: 100px;
+		margin-left: 0;
+	}
+
+	.menu_double a {
+		color: #fff;
+	}
+
+	.menu_double p {
+		margin-top: 0;
+		width: 100%;
+	}
+
+	.menu_double.our p {
+		margin-top: 0;
+		width: 100%;
+	}
+
+	.info_liga.two h2,
+	.info_liga.three h2 {
+		text-align: left;
+	}
+
+	.info_liga.one p,
+	.info_liga.two p,
+	.info_liga.three p {
+		text-align: left;
+	}
+
+	.program_gallery {
+		align-items: center;
+	}
+
+	.program {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

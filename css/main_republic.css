@@ -158,18 +158,118 @@ article ul{
 	}
 }
 
-@media only screen and (max-width: 1200px){
 
+@media screen and (max-width: 1024px) {
+	.info_about.one {
+		display: flex;
+		align-items: center;
+	}
+
+	.info_about.one>div {
+		margin: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.info_about.two {
+		display: flex;
+		align-items: center;
+	}
+
+	.info_about.two>div {
+		margin: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.info_about.three {
+		display: flex;
+		align-items: center;
+	}
+
+	.info_about.three>div {
+		margin: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
 }
 
-	/* === Планшеты === */
+@media screen and (max-width: 760px) {
+	.info_about.one {
+		flex-direction: column;
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	}
 
-}
+	.info_about.one>div {
+		order: 1;
+		width: 95%;
+		padding: 0;
+		margin-bottom: 15px;
+	}
 
-	/* === Смартфоны === */
+	.info_about.one>img {
+		order: 2;
+		width: 95%;
+		margin-bottom: 15px;
+	}
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.info_about.two {
+		flex-direction: column;
+	}
 
+	.info_about.two>div {
+		order: 1;
+		width: 95%;
+		padding: 0;
+		margin-bottom: 15px;
+	}
+
+	.info_about.two>img {
+		order: 2;
+		width: 95%;
+		margin-bottom: 15px;
+	}
+
+	.info_about.three {
+		flex-direction: column;
+	}
+
+	.info_about.three>div {
+		order: 1;
+		width: 95%;
+		padding: 0;
+		margin-bottom: 15px;
+	}
+
+	.info_about.three>img {
+		order: 2;
+		width: 95%;
+		margin-bottom: 15px;
+	}
+
+	.block_ytastnik.one {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.block_ytastnik.one>div {
+		margin: 0;
+		width: 100%;
+	}
+
+	.block_ytastnik.two {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.block_ytastnik.two>div {
+		margin: 0;
+		width: 100%;
+	}
+
+	.arrong {
+		display: none;
+	}
 }
