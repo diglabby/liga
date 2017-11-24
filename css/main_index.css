@@ -305,4 +305,8 @@ section>h2>span{
 		align-items: center;
 		justify-content: center;
 	}
+
+	.program:hover .program_name {
+		margin-top: 0 !important;
+	}
 }
