@@ -238,7 +238,7 @@ section>h2>span{
 	background-color: #fff;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
 	.box {
 		width: 100%;
 	}
@@ -306,7 +306,89 @@ section>h2>span{
 		justify-content: center;
 	}
 
-	.program:hover .program_name {
+	.program_name {
 		margin-top: 0 !important;
+	}
+
+	.program_name a {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		background-color: #fff;
+	}
+
+	.partners-logo-row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+
+@media screen and (max-width: 760px) {
+	.slogon {
+		margin-bottom: 40px;
+		min-height: 150px;
+	}
+
+	.menu_double.we {
+		height: 60px;
+		margin-bottom: 40px;
+	}
+
+	.menu_double.our {
+		min-height: 150px;
+	}
+
+
+	.info_liga.one {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.info_liga.one p,
+	.info_liga.one h2 {
+		width: 100%;
+	}
+	.info_liga.one h2 {
+		margin-bottom: 15px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.info_liga.two {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.info_liga.two p,
+	.info_liga.two h2 {
+		width: 100%;
+	}
+	.info_liga.two h2 {
+		margin-bottom: 15px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.info_liga.three {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 0;
+	}
+	.info_liga.three p,
+	.info_liga.three h2 {
+		width: 100%;
+	}
+	.info_liga.three h2 {
+		margin-bottom: 15px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}
+
+@media screen and (max-width: 390px) {
+	.slogon {
+		margin-bottom: 70px;
 	}
 }
