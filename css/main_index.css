@@ -324,6 +324,10 @@ section>h2>span{
 }
 
 @media screen and (max-width: 760px) {
+	.conteiner {
+		padding: 5px;
+	}
+
 	.slogon {
 		margin-bottom: 40px;
 		min-height: 150px;
