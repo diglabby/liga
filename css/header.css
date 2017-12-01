@@ -43,9 +43,18 @@ h1, h2, h3, h4, h5, h6, nav a, .banner{
 	.conteiner_header {
 		width: 100%;
 		padding: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 		position: relative;
 	}
@@ -116,7 +125,12 @@ header{
 	.header_info {
 		width: 100%;
 		display: none;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 		margin-bottom: 10px;
 	}
@@ -177,10 +191,19 @@ nav ul li a:hover{
 @media only screen and (max-width: 360px) {
 	.contacts {
 		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		min-height: 140px;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
 		justify-content: flex-start;
 	}
 }
@@ -217,6 +240,8 @@ nav ul li a:hover{
 
 @media only screen and (max-width: 360px) {
 	.social {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		min-height: 60px;
 		margin: 0;
@@ -273,18 +298,29 @@ background-size: auto 28px;
 }
 
 header .js-toggle {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 
 @media only screen and (max-width: 860px) {
 	.conteiner_header {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		padding: 0;
 		padding-top: 15px;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
-		justify-content: center;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
 	}
 
 	.logo {
@@ -293,7 +329,11 @@ header .js-toggle {
 
 	.contacts {
 		min-height: 40px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 
@@ -305,11 +345,20 @@ header .js-toggle {
 @media only screen and (max-width: 760px) {
 	.contacts {
 		position: relative;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+	}
+
+	.conteiner_header {
+		min-height: 550px;
+		padding-top: 25px;
 	}
 
 	.lang {
 		position: absolute;
+		bottom: -380px;
 	}
 
 	.contacts div {
@@ -322,6 +371,9 @@ header .js-toggle {
 	}
 
 	nav ul {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		margin-top: 30px;
 	}
@@ -329,9 +381,22 @@ header .js-toggle {
 
 
 @media only screen and (max-width: 360px) {
+	.conteiner_header {
+		min-height: 60px;
+	}
+
+	.lang {
+		bottom: -410px;
+	}
+
 	nav ul {
 		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		margin-top: 80px;
 
