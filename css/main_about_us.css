@@ -145,6 +145,10 @@ h3{
 }
 
 @media screen and (max-width: 760px) {
+	.info_about {
+		padding-top: 15px;
+	}
+
 	.info_about.one {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
@@ -166,8 +170,7 @@ h3{
 		-webkit-box-ordinal-group: 3;
 		-ms-flex-order: 2;
 		order: 2;
-		width: 95%;
-		margin-bottom: 15px;
+		width: 100%;
 	}
 
 	.info_about.two {
@@ -190,8 +193,7 @@ h3{
 		-webkit-box-ordinal-group: 3;
 		-ms-flex-order: 2;
 		order: 2;
-		width: 95%;
-		margin-bottom: 15px;
+		width: 100%;
 	}
 
 	.info_about.three {
@@ -214,8 +216,7 @@ h3{
 		-webkit-box-ordinal-group: 3;
 		-ms-flex-order: 2;
 		order: 2;
-		width: 95%;
-		margin-bottom: 15px;
+		width: 100%;
 	}
 
 }

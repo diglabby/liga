@@ -216,7 +216,12 @@ article ul{
 
 @media screen and (max-width: 760px) {
 
+	.conteiner {
+		padding: 0;
+	}
+
 	.info_about {
+		padding-top: 15px;
 		text-align: left;
 	}
 
@@ -242,8 +247,7 @@ article ul{
 		-webkit-box-ordinal-group: 3;
 		-ms-flex-order: 2;
 		order: 2;
-		width: 95%;
-		margin-bottom: 15px;
+		width: 100%;
 	}
 
 	.info_about.two {
@@ -266,8 +270,7 @@ article ul{
 		-webkit-box-ordinal-group: 3;
 		-ms-flex-order: 2;
 		order: 2;
-		width: 95%;
-		margin-bottom: 15px;
+		width: 100%;
 	}
 
 	.info_about.three {
@@ -290,8 +293,7 @@ article ul{
 		-webkit-box-ordinal-group: 3;
 		-ms-flex-order: 2;
 		order: 2;
-		width: 95%;
-		margin-bottom: 15px;
+		width: 100%;
 	}
 
 }

@@ -201,6 +201,11 @@ article ul{
 }
 
 @media screen and (max-width: 760px) {
+	.info_about {
+		padding-top: 15px;
+	}
+
+
 	.info_about.one {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
@@ -222,8 +227,7 @@ article ul{
 		-webkit-box-ordinal-group: 3;
 		-ms-flex-order: 2;
 		order: 2;
-		width: 95%;
-		margin-bottom: 15px;
+		width: 100%;
 	}
 
 	.info_about.two {
@@ -246,8 +250,7 @@ article ul{
 		-webkit-box-ordinal-group: 3;
 		-ms-flex-order: 2;
 		order: 2;
-		width: 95%;
-		margin-bottom: 15px;
+		width: 100%;
 	}
 
 	.info_about.three {
@@ -270,8 +273,7 @@ article ul{
 		-webkit-box-ordinal-group: 3;
 		-ms-flex-order: 2;
 		order: 2;
-		width: 95%;
-		margin-bottom: 15px;
+		width: 100%;
 	}
 
 	.block_ytastnik.one {

@@ -354,7 +354,7 @@ section>h2>span{
 	}
 
 	.menu_double.we a {
-		outline: 1px solid #fff;
+		text-decoration: underline;
 	}
 
 	.menu_double.our {

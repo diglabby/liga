@@ -182,6 +182,10 @@ h1{
 }
 
 @media only screen and (max-width: 760px) {
+	.info_about {
+		padding-top: 15px;
+	}
+
 	h1 {
 		border-top: none;
 	}
@@ -218,7 +222,6 @@ h1{
 		-webkit-box-ordinal-group: 3;
 		-ms-flex-order: 2;
 		order: 2;
-		margin-bottom: 38px;
 	}
 
 	.info_about.one>div {
@@ -415,7 +418,6 @@ h1{
 		-webkit-box-ordinal-group: 3;
 		-ms-flex-order: 2;
 		order: 2;
-		margin-bottom: 38px;
 	}
 
 	.info_about.one>div {
