@@ -83,27 +83,23 @@ h2{
 	text-transform: uppercase;
 }
 
+.info_liga {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
 .info_liga h2{
 	width:38%;
 	float:left;
 	margin-left: 5%;
 	margin-right: 1%;
+	line-height: 1;
+	margin-bottom: 25px;
 }
 
-.info_liga:nth-child(2){
-	line-height: 50px;
-}
-
-.info_liga.one h2{
-	line-height: 50px;
-}
-
-.info_liga.two h2{
-	line-height: 50px;
-}
-
-.info_liga.three h2{
-	line-height: 70px;
+.info_liga h2:last-child {
+	margin-bottom: 0;
 }
 
 .info_liga p{
@@ -178,6 +174,7 @@ section>h2>span{
 	width:100px;
 	display: block;
 	margin:0 auto;
+	margin-top: 30px;
 	padding:10px;
 	text-decoration: none;
 	color:#2d2d2d;
@@ -354,6 +351,10 @@ section>h2>span{
 	.menu_double.we {
 		height: 60px;
 		margin-bottom: 40px;
+	}
+
+	.menu_double.we a {
+		outline: 1px solid #fff;
 	}
 
 	.menu_double.our {

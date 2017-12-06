@@ -166,6 +166,10 @@ article ul{
 
 
 @media screen and (max-width: 1024px) {
+	.info_about {
+		padding-top: 15px;
+	}
+
 	.info_about.one {
 		display: -webkit-box;
 		display: -ms-flexbox;

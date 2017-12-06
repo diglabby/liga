@@ -221,6 +221,10 @@ h3{
 }
 
 @media screen and (max-width: 360px) {
+	.conteiner {
+		padding-top: 15px;
+	}
+
 	.conteiner .info_about h2 {
 		font-size: 24px;
 		text-align: center;
