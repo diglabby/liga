@@ -15,6 +15,7 @@
   text-align: center;
   visibility: visible;
   opacity: 1;
+  max-width: 240px;
 
   transition: opacity 0.7s ease;
 }
@@ -50,11 +51,30 @@
   transform: rotate(45deg);
 }
 
+/*.slider_arrow {
+  height: 4px;
+  width: 40px;
+  margin-top: 30px;
+  top: -15px;
+  position: absolute;
+  background: darkgray;
+  transition: 0.5s ease;
+  transform: rotate(45deg);
+}*/
+
 .slider_left_arrow {
-  transform: rotate(135deg);
+  transform: rotate(-45deg);
 }
 
-.slider_right_arrow::after {
+.slider_top_arrow {
+  transform: rotate(45deg);
+}
+
+.slider_bottom_arrow {
+  transform: rotate(-135deg);
+}
+
+.slider_arrow::after {
   content: "";
   display: block;
   height: 4px;
@@ -65,13 +85,15 @@
 }
 
 .slider_left_arrow::after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 40px;
-  background: darkgray;
-  transition: 0.5s ease;
-  transform: translate(19px, -19px) rotate(90deg);
+  transform: translate(-19px, 19px) rotate(90deg);
+}
+
+.slider_bottom_arrow::after {
+  transform: translate(-19px, 19px) rotate(90deg);
+}
+
+.slider_top_arrow::after {
+  transform: translate(-19px, 19px) rotate(90deg);
 }
 
 .slider_arrow_wrapper {
@@ -81,18 +103,26 @@
   top: 160px;
 }
 
-.slider_arrow_wrapper:hover .slider_right_arrow {
-  transform: rotate(45deg) scale(1.2);
-  background: orange;
-}
-.slider_arrow_wrapper:hover .slider_right_arrow::after {
+.slider_arrow_wrapper:hover .slider_arrow {
   background: orange;
 }
 
-.slider_arrow_wrapper:hover .slider_left_arrow {
-  transform: rotate(135deg) scale(1.2);
+.slider_arrow_wrapper:hover .slider_arrow::after {
   background: orange;
 }
-.slider_arrow_wrapper:hover .slider_left_arrow::after {
-  background: orange;
+
+.slider_arrow_wrapper:hover .slider_right_arrow {
+  transform: rotate(45deg) scale(1.2);
+}
+
+.slider_arrow_wrapper:hover .slider_left_arrow {
+  transform: rotate(-45deg) scale(1.2);
+}
+
+.slider_arrow_wrapper:hover .slider_bottom_arrow {
+  transform: rotate(-135deg) scale(1.2);
+}
+
+.slider_arrow_wrapper:hover .slider_top_arrow {
+  transform: rotate(45deg) scale(1.2);
 }

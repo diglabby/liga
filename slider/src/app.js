@@ -10,8 +10,7 @@ let elementsLimit;
 class Slider {
   // Initialization
   constructor(slides) {
-    elementsLimit = slides ? slides : ELEMENTS_LIMIT;
-
+    this.setSlidesQuantity();
     const childrens = [...container.children]; // Converting children nodes to array for mapping throught
 
     // Add on left and right side buttons
@@ -46,6 +45,40 @@ class Slider {
     // s - shown
     // h - hidden
     this.hideExtraSlides(this.childrens, this.frame);
+  }
+
+  onResize() {
+    this.setSlidesQuantity();
+    this.frame = [];
+    this.order = [];
+
+    // Making first window - from 0 to window size
+    for (let i = 0; i < elementsLimit; i++) {
+      this.frame.push(i);
+      this.order.push(0); // we need it later, for moving frames from left to right and contrary
+    }
+
+    this.hideExtraSlides(this.childrens, this.frame);
+  }
+
+  async setSlidesQuantity() {
+    let width = this._getWidth();
+    if(width > 768) {
+      elementsLimit = 4
+    } else if(width <= 768 && width > 534) {
+      elementsLimit = 2
+    } else {
+      elementsLimit = 1
+    }
+  }
+
+  _getWidth() {
+    var width =
+      window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
+    return width;
   }
 
   hideExtraSlides(slides, frame, direction) {

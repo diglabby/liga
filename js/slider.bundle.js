@@ -519,6 +519,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var slider = new _app2.default(4);
 
+window.addEventListener("resize", function () {
+  return slider.onResize.bind(slider)();
+});
+
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -557,8 +561,7 @@ var Slider = function () {
   function Slider(slides) {
     _classCallCheck(this, Slider);
 
-    elementsLimit = slides ? slides : ELEMENTS_LIMIT;
-
+    this.setSlidesQuantity();
     var childrens = [].concat(_toConsumableArray(container.children)); // Converting children nodes to array for mapping throught
 
     // Add on left and right side buttons
@@ -598,6 +601,40 @@ var Slider = function () {
   }
 
   _createClass(Slider, [{
+    key: "onResize",
+    value: function onResize() {
+      this.setSlidesQuantity();
+      this.frame = [];
+      this.order = [];
+
+      // Making first window - from 0 to window size
+      for (var i = 0; i < elementsLimit; i++) {
+        this.frame.push(i);
+        this.order.push(0); // we need it later, for moving frames from left to right and contrary
+      }
+
+      this.hideExtraSlides(this.childrens, this.frame);
+    }
+  }, {
+    key: "setSlidesQuantity",
+    value: async function setSlidesQuantity() {
+      var width = this._getWidth();
+      if (width > 768) {
+        elementsLimit = 4;
+      } else if (width <= 768 && width > 534) {
+        elementsLimit = 2;
+      } else {
+        elementsLimit = 1;
+      }
+    }
+  }, {
+    key: "_getWidth",
+    value: function _getWidth() {
+      var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+      return width;
+    }
+  }, {
     key: "hideExtraSlides",
     value: function hideExtraSlides(slides, frame, direction) {
       var _this = this;
@@ -836,7 +873,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".app__container___1cHDO {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n}\n\n/*.container img {\n  border-radius: 50%;\n}*/\n\n.app__slide___2m8a9 {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  visibility: visible;\n  opacity: 1;\n\n  transition: opacity 0.7s ease;\n}\n\n.app__transparent___3KfOZ {\n  opacity: 0;\n}\n\n.app__hidden___16BsG {\n  opacity: 0;\n  position: absolute;\n  top: -999999px;\n}\n\n.app__hiddenRight___2QWdl {\n  transform: translateX(+600px);\n}\n\n.app__hiddenLeft___MKkFg {\n  transform: translateX(-600px);\n}\n/*\n* Creating cool pure CSS3 transfomation based arrows with smooth hover effect\n*/\n.app__slider_arrow___wnI2g {\n  height: 4px;\n  width: 40px;\n  margin-top: 30px;\n  top: -15px;\n  position: absolute;\n  background: darkgray;\n  transition: 0.5s ease;\n  transform: rotate(45deg);\n}\n\n.app__slider_left_arrow___3M0-N {\n  transform: rotate(135deg);\n}\n\n.app__slider_right_arrow___oPr0k::after {\n  content: \"\";\n  display: block;\n  height: 4px;\n  width: 40px;\n  background: darkgray;\n  transition: 0.5s ease;\n  transform: translate(19px, 19px) rotate(90deg);\n}\n\n.app__slider_left_arrow___3M0-N::after {\n  content: \"\";\n  display: block;\n  height: 4px;\n  width: 40px;\n  background: darkgray;\n  transition: 0.5s ease;\n  transform: translate(19px, -19px) rotate(90deg);\n}\n\n.app__slider_arrow_wrapper___39DAb {\n  width: 40px;\n  height: 40px;\n  position: relative;\n  top: 160px;\n}\n\n.app__slider_arrow_wrapper___39DAb:hover .app__slider_right_arrow___oPr0k {\n  transform: rotate(45deg) scale(1.2);\n  background: orange;\n}\n.app__slider_arrow_wrapper___39DAb:hover .app__slider_right_arrow___oPr0k::after {\n  background: orange;\n}\n\n.app__slider_arrow_wrapper___39DAb:hover .app__slider_left_arrow___3M0-N {\n  transform: rotate(135deg) scale(1.2);\n  background: orange;\n}\n.app__slider_arrow_wrapper___39DAb:hover .app__slider_left_arrow___3M0-N::after {\n  background: orange;\n}\n", ""]);
+exports.push([module.i, ".app__container___1cHDO {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n}\n\n/*.container img {\n  border-radius: 50%;\n}*/\n\n.app__slide___2m8a9 {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  visibility: visible;\n  opacity: 1;\n  max-width: 240px;\n\n  transition: opacity 0.7s ease;\n}\n\n.app__transparent___3KfOZ {\n  opacity: 0;\n}\n\n.app__hidden___16BsG {\n  opacity: 0;\n  position: absolute;\n  top: -999999px;\n}\n\n.app__hiddenRight___2QWdl {\n  transform: translateX(+600px);\n}\n\n.app__hiddenLeft___MKkFg {\n  transform: translateX(-600px);\n}\n/*\n* Creating cool pure CSS3 transfomation based arrows with smooth hover effect\n*/\n.app__slider_arrow___wnI2g {\n  height: 4px;\n  width: 40px;\n  margin-top: 30px;\n  top: -15px;\n  position: absolute;\n  background: darkgray;\n  transition: 0.5s ease;\n  transform: rotate(45deg);\n}\n\n/*.slider_arrow {\n  height: 4px;\n  width: 40px;\n  margin-top: 30px;\n  top: -15px;\n  position: absolute;\n  background: darkgray;\n  transition: 0.5s ease;\n  transform: rotate(45deg);\n}*/\n\n.app__slider_left_arrow___3M0-N {\n  transform: rotate(-45deg);\n}\n\n.app__slider_top_arrow___HzBYM {\n  transform: rotate(45deg);\n}\n\n.app__slider_bottom_arrow___2BUwW {\n  transform: rotate(-135deg);\n}\n\n.app__slider_arrow___wnI2g::after {\n  content: \"\";\n  display: block;\n  height: 4px;\n  width: 40px;\n  background: darkgray;\n  transition: 0.5s ease;\n  transform: translate(19px, 19px) rotate(90deg);\n}\n\n.app__slider_left_arrow___3M0-N::after {\n  transform: translate(-19px, 19px) rotate(90deg);\n}\n\n.app__slider_bottom_arrow___2BUwW::after {\n  transform: translate(-19px, 19px) rotate(90deg);\n}\n\n.app__slider_top_arrow___HzBYM::after {\n  transform: translate(-19px, 19px) rotate(90deg);\n}\n\n.app__slider_arrow_wrapper___39DAb {\n  width: 40px;\n  height: 40px;\n  position: relative;\n  top: 160px;\n}\n\n.app__slider_arrow_wrapper___39DAb:hover .app__slider_arrow___wnI2g {\n  background: orange;\n}\n\n.app__slider_arrow_wrapper___39DAb:hover .app__slider_arrow___wnI2g::after {\n  background: orange;\n}\n\n.app__slider_arrow_wrapper___39DAb:hover .app__slider_right_arrow___oPr0k {\n  transform: rotate(45deg) scale(1.2);\n}\n\n.app__slider_arrow_wrapper___39DAb:hover .app__slider_left_arrow___3M0-N {\n  transform: rotate(-45deg) scale(1.2);\n}\n\n.app__slider_arrow_wrapper___39DAb:hover .app__slider_bottom_arrow___2BUwW {\n  transform: rotate(-135deg) scale(1.2);\n}\n\n.app__slider_arrow_wrapper___39DAb:hover .app__slider_top_arrow___HzBYM {\n  transform: rotate(45deg) scale(1.2);\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -848,8 +885,10 @@ exports.locals = {
 	"hiddenLeft": "app__hiddenLeft___MKkFg",
 	"slider_arrow": "app__slider_arrow___wnI2g",
 	"slider_left_arrow": "app__slider_left_arrow___3M0-N",
-	"slider_right_arrow": "app__slider_right_arrow___oPr0k",
-	"slider_arrow_wrapper": "app__slider_arrow_wrapper___39DAb"
+	"slider_top_arrow": "app__slider_top_arrow___HzBYM",
+	"slider_bottom_arrow": "app__slider_bottom_arrow___2BUwW",
+	"slider_arrow_wrapper": "app__slider_arrow_wrapper___39DAb",
+	"slider_right_arrow": "app__slider_right_arrow___oPr0k"
 };
 
 /***/ }),
