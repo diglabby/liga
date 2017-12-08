@@ -217,6 +217,10 @@ article ul{
 }
 
 @media screen and (max-width: 760px) {
+	h1 {
+		font-size: 24px;
+	}
+
 	.info_about.one {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
